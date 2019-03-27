@@ -58,3 +58,9 @@
 		$value = config('app.timezone');
 ####	2.要在运行时设置配置值，传递一个数组给 config 函数
 		config(['app.timezone' => 'America/Chicago']);
+## 4.辅助函数
+	Laravel 提供了很多 辅助函数，有时候我们也需要创建自己的辅助函数。
+	我们把所有的『自定义辅助函数』存放于 bootstrap/helpers.php 文件中，这里需要新建一个空文件
+	在 bootstrap/app.php 文件的最顶部进行加载：
+	<?php
+	require_once __DIR__ . '/helpers.php';
